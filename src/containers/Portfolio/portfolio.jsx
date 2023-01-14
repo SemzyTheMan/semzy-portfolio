@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import Project from "../../components/Projects/projects";
 
 const Portfolio = (props) => {

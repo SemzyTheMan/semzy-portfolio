@@ -2,7 +2,11 @@ import React from "react";
 import Project from "../../components/Projects/projects";
 
 const Portfolio = (props) => {
+   useEffect(() => {
+     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+   }, []);
   return (
+
     <div>
       <Project
         title={"Audiophile E-commerce App"}

@@ -1,0 +1,151 @@
+.Contact {
+  width: 80%;
+  margin: auto;
+
+  &_container {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    h1 {
+      margin-top: 4rem;
+      width: 45%;
+      font-size: 4rem;
+    }
+  }
+  &_desc {
+    margin-top: 4rem;
+    width: 45%;
+    font-size: 2rem;
+    color: #33323dcc;
+    p {
+      line-height: 3rem;
+    }
+  }
+  &_imgsection {
+    margin-top: 4rem;
+    img {
+      margin-right: 2rem;
+    }
+  }
+}
+.Form_section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 4rem;
+  border-top: 1px solid #ccc;
+  h1 {
+    width: 45%;
+    font-size: 4rem;
+    margin-top: 3rem;
+  }
+}
+
+.form {
+  margin-top: 3rem;
+  width: 48%;
+  label {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: "Public Sans", sans-serif;
+  }
+  button {
+    margin-top: 3rem;
+    display: flex;
+    height: 5rem;
+    background-color: #203a4c;
+    color: white;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    padding-right: 3rem;
+    &:hover {
+      background-color: #5fb4a2;
+      span {
+        background-color: #203a4c;
+      }
+    }
+    span {
+      height: 100%;
+      width: 5rem;
+      background-color: black;
+      background-image: url("../../../public/images/icons/down-arrows.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+      z-index: 1;
+      margin-right: 1rem;
+    }
+  }
+  input {
+    width: 100%;
+    font-size: 2rem;
+    height: 5rem;
+    margin-bottom: 3rem;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    padding: 2.5rem;
+    font-family: "Public Sans", sans-serif;
+  }
+  input::placeholder {
+    font-size: 1.5rem;
+    color: rgb(141, 140, 140);
+  }
+  textarea {
+    width: 100%;
+    font-size: 2rem;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    padding: 2.5rem;
+  }
+  textarea::placeholder {
+    font-size: 1.5rem;
+    color: rgb(141, 140, 140);
+    font-family: "Public Sans", sans-serif;
+  }
+  * {
+    display: block;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .Contact {
+    width: 90%;
+    margin: auto;
+
+    &_container {
+      border-top: 1px solid #ccc;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        width: 100%;
+      }
+    }
+    &_desc {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .Form_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      width: 100%;
+    }
+  }
+
+  .form {
+    margin-top: 3rem;
+    width: 100%;
+    label {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      font-family: "Public Sans", sans-serif;
+    }
+  }
+}

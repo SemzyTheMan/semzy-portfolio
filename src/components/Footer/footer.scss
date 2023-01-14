@@ -1,0 +1,60 @@
+.Footer {
+  background-color: #33323d;
+  display: flex;
+  align-items: center;
+  padding: 3rem 8rem;
+  margin-top: 3rem;
+  h1 {
+    display: none;
+  }
+  &_list {
+    margin-right: auto;
+  }
+  &_logo {
+    margin-right: 5rem;
+  }
+  &_list-item {
+    display: inline;
+    margin-left: 3rem;
+    color: white;
+    font-size: 1.7rem;
+    cursor: pointer;
+  }
+  &_twitter {
+    margin-right: 3rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .Footer {
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      display: block;
+      font-family: "Lobster", cursive;
+      font-size: 3.5rem;
+      color: white;
+    }
+    &_logo {
+      display: none;
+      margin-right: 0;
+      width: 4rem;
+    }
+    &_list-item {
+      display: block;
+      margin: auto;
+      text-align: center;
+      font-size: 3rem;
+      padding: 0.7rem 0;
+    }
+    &_list {
+      margin-right: 0;
+    }
+    &_twitter {
+      margin-right: 0;
+      display: none;
+    }
+    &_git {
+      display: none;
+    }
+  }
+}

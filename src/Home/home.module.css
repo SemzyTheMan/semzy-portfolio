@@ -1,0 +1,182 @@
+.Container {
+  width: 70%;
+  margin: auto;
+}
+.Homepage {
+  width: 100%;
+}
+.imgHome {
+  width: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.Headcontainer {
+  position: relative;
+  width: 50%;
+  margin-top: -30%;
+  z-index: 1;
+  background-color: white;
+}
+.Head {
+  font-size: 5rem;
+  font-family: "Ibarra Real Nova", serif;
+  padding: 2rem 1rem;
+  color: #33323d;
+  font-weight: 700;
+}
+.AboutBtn {
+  padding: 1.5rem 3rem;
+  background-color: #203a4c;
+  font-size: 1.6rem;
+  color: white;
+  width: 50%;
+  text-decoration: none;
+}
+.AboutBtn > span {
+  padding-right: 1rem;
+}
+.Section_about {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+}
+.Aboutimg,
+.Description {
+  width: 45%;
+}
+.Description {
+  font-size: 2rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.Description > p {
+  color: #33323dcc;
+  line-height: 3rem;
+}
+.Description > h1 {
+  font-family: "Ibarra Real Nova", serif;
+  color: #33323d;
+}
+.Description > * {
+  margin-top: 3rem;
+}
+.Description > button,
+.ContactMe > button {
+  background-color: white;
+  cursor: pointer;
+  color: #33323dcc;
+
+  font-size: 1.8rem;
+  padding: 1.5rem 3rem;
+}
+.Description > button:hover,
+.ContactMe > button:hover {
+  background-color: #33323d;
+  color: white;
+}
+.Skills {
+  margin-top: 7rem;
+}
+.Skills > h1 {
+  font-size: 4rem;
+  margin: 2rem 0;
+  font-family: "Ibarra Real Nova", serif;
+}
+.skill_main {
+  display: grid;
+  width: 60%;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: auto;
+}
+.ContactMe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+.ContactMe > h1 {
+  font-size: 4rem;
+  font-family: "Ibarra Real Nova", serif;
+}
+@media only screen and (max-width: 425px) {
+  .Container {
+    width: 90%;
+    overflow-x: hidden;
+  }
+  .Headcontainer {
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .Section_about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Aboutimg,
+  .Description {
+    width: 100%;
+  }
+  .Description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Description > button {
+    margin-bottom: 4rem;
+  }
+  .Skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skill_main {
+    display: grid;
+    width: 100%;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .ContactMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .ContactMe > button {
+    margin-top: 3rem;
+    justify-self: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .skill_main {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+  }
+  .Container {
+    width: 90%;
+    margin-top: 3rem;
+  }
+  .Headcontainer {
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .Section_about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Aboutimg,
+  .Description {
+    width: 100%;
+  }
+  .Description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ContactMe > button {
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,209 @@
+.Details_container {
+  width: 80%;
+  margin: auto;
+  img {
+    width: 100%;
+  }
+  .Description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    margin-top: 3rem;
+
+    .desc_one {
+      width: 48%;
+      margin-top: 3rem;
+      h1 {
+        font-size: 4rem;
+        margin-top: 4rem;
+      }
+      p {
+        font-size: 2rem;
+        margin-top: 1.5rem;
+        color: #5fb4a2;
+      }
+      .buttons {
+        display: flex;
+        margin-top: 3rem;
+        button {
+          height: 4rem;
+          padding: 0 3rem;
+          display: flex;
+          align-items: center;
+          background-color: transparent;
+          margin-right: 2rem;
+          a {
+            color: black;
+          }
+        }
+        .git {
+          background-color: #33323d;
+          color: white;
+          a {
+            color: white;
+          }
+          span {
+            margin-right: 0.7rem;
+          }
+        }
+      }
+    }
+    .desc_two {
+      width: 48%;
+      font-size: 2rem;
+      margin-top: 3rem;
+      line-height: 3rem;
+      color: #33323dcc;
+    }
+  }
+  .background {
+    margin-top: 6rem;
+    border-top: 1px solid #ccc;
+    h1 {
+      font-size: 3.5rem;
+      margin-top: 3.5rem;
+      font-weight: 400;
+    }
+    p {
+      font-size: 1.9rem;
+      line-height: 3rem;
+      color: #33323dcc;
+      margin-top: 3rem;
+    }
+  }
+  .next_prev {
+    display: grid;
+    margin-top: 4rem;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 3rem 0;
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.9rem;
+      color: #33323dcc;
+      padding: 2rem 0;
+    }
+    .prev {
+      display: flex;
+      justify-content: left;
+      padding-left: 2rem;
+      border-right: 1px solid #ccc;
+      align-items: center;
+      cursor: pointer;
+      * {
+        margin-right: 1rem;
+      }
+      &:hover {
+        * {
+          color: #5fb4a2;
+        }
+      }
+    }
+    .next {
+      display: flex;
+      text-align: right;
+      padding-right: 2rem;
+      justify-content: right;
+      align-items: center;
+      cursor: pointer;
+      * {
+        margin-left: 1rem;
+      }
+      &:hover {
+        * {
+          color: #5fb4a2;
+        }
+      }
+    }
+  }
+
+  .ContactMe {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    h1 {
+      font-size: 4rem;
+    }
+    button {
+      background-color: white;
+      cursor: pointer;
+      color: #33323dcc;
+      font-size: 1.8rem;
+      padding: 1.5rem 3rem;
+    }
+    button:hover {
+      background-color: #33323d;
+      color: white;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .Details_container {
+    width: 90%;
+    margin-top: 4rem;
+    .Description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .desc_one {
+        width: 100%;
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        p {
+          font-size: 2.2rem;
+        }
+        .buttons {
+          display: flex;
+          margin-top: 0;
+          flex-direction: column;
+          align-items: center;
+          button {
+            height: 5rem;
+            margin-top: 3rem;
+            margin-right: 0;
+          }
+        }
+      }
+      .desc_two {
+        width: 100%;
+      }
+    }
+    .next_prev {
+      padding: 1.5rem 0;
+      grid-template-columns: 1fr;
+
+      .prev {
+        border-bottom: 1px solid #ccc;
+        border-right: none;
+        align-items: center;
+        justify-content: center;
+      }
+      .next {
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .ContactMe {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    align-items: center;
+    text-align: center;
+
+    button {
+      margin-top: 2rem;
+      justify-self: center;
+    }
+  }
+}

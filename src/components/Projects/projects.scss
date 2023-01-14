@@ -1,0 +1,59 @@
+.Project {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 10rem;
+  align-items: center;
+  &_img {
+    width: 45%;
+  }
+  &_desc {
+    width: 45%;
+    font-size: 2rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    h1 {
+      font-family: "Ibarra Real Nova", serif;
+      margin-top: 3rem;
+    }
+    p {
+      margin-top: 3rem;
+      line-height: 3rem;
+      color: #33323ddc;
+    }
+    button {
+      cursor: pointer;
+      background-color: transparent;
+      padding: 1.5rem 3rem;
+      margin: 6rem 0;
+    }
+  }
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+@media only screen and (max-width: 768px) {
+  .Project {
+    width: 90%;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 10rem;
+    align-items: center;
+    &_img {
+      width: 100%;
+    }
+    &_desc {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      button {
+        justify-self: center;
+      }
+    }
+  }
+  .reverse {
+    flex-direction: column;
+  }
+}

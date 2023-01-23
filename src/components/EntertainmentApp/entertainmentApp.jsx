@@ -23,7 +23,7 @@ const EntertainmentApp = (props) => {
         nextId={"Devjobs"}
         prev={"Designo"}
         next={"Devjobs"}
-        website={"https://semzy-movieapp.web.app/"}
+        website={"https://semzy-movie-app.vercel.app/"}
         codelink={"https://github.com/SemzyTheMan/semzy-movieApp"}
       ></Details>
     </div>
